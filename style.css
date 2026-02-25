@@ -156,10 +156,18 @@
   }
 
   .harmburger {
-    width: 30px;
-    height: 30px;
-    display: none;
-  }
+  width: 32px;
+  height: 32px;
+  display: none;
+  cursor: pointer;
+ 
+}
+
+/* .harmburger svg {
+  width: 100%;
+  height: 100%;
+  stroke: white;
+} */
 
   /* Hover effect */
   .nav-links a:hover {
@@ -704,9 +712,6 @@
     font-size: 14px;
     color: #94a3b8;
   }
-
-
-
   @media screen and (max-width: 768px) {
     .home-content {
       flex-direction: column;
@@ -737,9 +742,11 @@
     }
 
     .harmburger {
-      display: block;
-      position: absolute;
-      left: 80%;
+    display: block;
+    position: absolute;
+    right: 50%;
+    left: 79%;
+  
     }
 
     .stat {
@@ -758,4 +765,80 @@
     .project-card1 .area-btn {
       align-items: center;
     }
+  }
+  @media screen and (max-width: 320px){
+   .logo{
+    margin-right:65%;
+   }
+   
+   .harmburger{
+    display: block;
+    position: absolute;
+    right: 15px;
+    left: 75%;
+    }
+    #home{
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+     flex-direction:row;
+     justify-content: center;
+     height: 180vh;
+    }
+    
+    .floating-photo{
+      height: 10px;
+    }
+     .stat{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+     }
+     .stat-box{
+      flex: 1;
+      text-align: center;
+     }
+     .stat-box h2{
+      font-size: 24px;
+     }
+     .stat p{
+      font-size: 12px;
+     }
+     .container{
+      padding: 12px;
+     }
+     .cards{
+      padding-right: 20px;
+      border-radius: 10px;
+     }
+     .cards .card h3{
+      font-size: large;
+      font-weight: 500;
+     }
+     #skills{
+      padding: 40px 12px;
+     }
+     .skills-container h2{
+      font-size: 22px;
+      text-align: center;
+     }
+     .skills-grid{
+      max-width: 100%;
+     }
+     .skills{
+      margin-bottom: 18px;
+     }
+     .skills p{
+      font-size: 14px;
+      text-align: left;
+      
+     }
+     .progress{
+      height: 8px;
+     }
+     .progress-bar{
+      height: 100%;
+     }
   }
