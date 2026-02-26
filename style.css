@@ -156,14 +156,14 @@
   }
 
   .harmburger {
-  width: 32px;
-  height: 32px;
-  display: none;
-  cursor: pointer;
- 
-}
+    width: 32px;
+    height: 32px;
+    display: none;
+    cursor: pointer;
 
-/* .harmburger svg {
+  }
+
+  /* .harmburger svg {
   width: 100%;
   height: 100%;
   stroke: white;
@@ -712,6 +712,7 @@
     font-size: 14px;
     color: #94a3b8;
   }
+
   @media screen and (max-width: 768px) {
     .home-content {
       flex-direction: column;
@@ -742,17 +743,21 @@
     }
 
     .harmburger {
-    display: block;
-    position: absolute;
-    right: 50%;
-    left: 79%;
-  
+      display: block;
+      position: absolute;
+      right: 50%;
+      left: 79%;
+
     }
 
     .stat {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
       align-items: center;
       justify-content: center;
     }
+    
 
     .project-card {
       margin-bottom: 40px;
@@ -766,79 +771,108 @@
       align-items: center;
     }
   }
-  @media screen and (max-width: 320px){
-   .logo{
-    margin-right:65%;
-   }
-   
-   .harmburger{
-    display: block;
-    position: absolute;
-    right: 15px;
-    left: 75%;
-    }
-    #home{
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      display: flex;
-     flex-direction:row;
-     justify-content: center;
-     height: 180vh;
-    }
-    
-    .floating-photo{
-      height: 10px;
-    }
-     .stat{
+
+  /* @media screen and (max-width: 425px) {
+    .logo{
+       margin-right: 65%;
+       background-color: red;
+    } 
+    .stat {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       gap: 10px;
-     }
-     .stat-box{
+    }
+  } */
+
+  @media screen and (max-width: 320px) {
+    .logo {
+      margin-right: 65%;
+    }
+
+    .harmburger {
+      display: block;
+      position: absolute;
+      right: 15px;
+      left: 75%;
+    }
+
+    #home {
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 180vh;
+    }
+
+    .floating-photo {
+      height: 10px;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .stat-box {
       flex: 1;
       text-align: center;
-     }
-     .stat-box h2{
+    }
+
+    .stat-box h2 {
       font-size: 24px;
-     }
-     .stat p{
+    }
+
+    .stat p {
       font-size: 12px;
-     }
-     .container{
+    }
+
+    .container {
       padding: 12px;
-     }
-     .cards{
+    }
+
+    .cards {
       padding-right: 20px;
       border-radius: 10px;
-     }
-     .cards .card h3{
+    }
+
+    .cards .card h3 {
       font-size: large;
       font-weight: 500;
-     }
-     #skills{
+    }
+
+    #skills {
       padding: 40px 12px;
-     }
-     .skills-container h2{
+    }
+
+    .skills-container h2 {
       font-size: 22px;
       text-align: center;
-     }
-     .skills-grid{
+    }
+
+    .skills-grid {
       max-width: 100%;
-     }
-     .skills{
+    }
+
+    .skills {
       margin-bottom: 18px;
-     }
-     .skills p{
+    }
+
+    .skills p {
       font-size: 14px;
       text-align: left;
-      
-     }
-     .progress{
+
+    }
+
+    .progress {
       height: 8px;
-     }
-     .progress-bar{
+    }
+
+    .progress-bar {
       height: 100%;
-     }
+    }
   }
