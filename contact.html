@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
 
-<div class="container">
-    <h2>Let's Get Started</h2>
+    <div class="container">
+        <h2>Let's Get Started</h2>
 
-    <form id="contactForm">
-        <label for="fname">Full Name</label>
-        <input type="text" id="fname" required>
+        <form id="contactForm">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="you@gmail.com" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@gmail.com" required>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" placeholder="Project discussion" required>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project discussion" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Tell me about your project..." required></textarea>
 
-        <button type="submit">SUBMIT</button>
-    </form>
+            <button type="submit">SUBMIT</button>
+        </form>
 
-    <p id="messageStatus"></p>
-</div>
+        <p id="messageStatus"></p>
+    </div>
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-    let name = document.getElementById("fname").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let subject = document.getElementById("subject").value.trim();
-    let message = document.getElementById("message").value.trim();
+            let name = document.getElementById("fname").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let subject = document.getElementById("subject").value.trim();
+            let message = document.getElementById("message").value.trim();
 
-    let status = document.getElementById("messageStatus");
+            let status = document.getElementById("messageStatus");
 
-    if (name === "" || email === "" || subject === "" || message === "") {
-        status.style.color = "red";
-        status.textContent = "Please fill in all fields!";
-        return;
-    }
+            if (name === "" || email === "" || subject === "" || message === "") {
+                status.style.color = "red";
+                status.textContent = "Please fill in all fields!";
+                return;
+            }
 
-    status.style.color = "green";
-    status.textContent = "Form submitted successfully!";
+            status.style.color = "green";
+            status.textContent = "Form submitted successfully!";
 
-    this.reset();
-});
-</script>
+            this.reset();
+        });
+    </script>
 
 </body>
+
 </html>
